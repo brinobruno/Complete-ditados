@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>As the saying goes...</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+        <div class="quiz show">
+            <h1>Complete os Ditados Populares</h1>
+
+        <p id='p1'>"Água mole em pedra dura... &nbsp</p>
+    
+        <input placeholder="Complete aqui" id='inputTexto1' required>
+        <button onclick="clicou('inputTexto1', 'p1'); validate1(); this.disabled = true;">Enviar</button> 
+
+        <p id='p2'>"Amigos, amigos... &nbsp</p>
+    
+        <input placeholder="Complete aqui" id='inputTexto2' required>
+        <button onclick="clicou('inputTexto2', 'p2'); validate2(); this.disabled = true;">Enviar</button> 
+
+        <p id='p3'>"De médico e louco... &nbsp</p>
+    
+        <input placeholder="Complete aqui" id='inputTexto3' required>
+        <button onclick="clicou('inputTexto3', 'p3'); validate3(); this.disabled = true;">Enviar</button> 
+    
+        <p id='p4'>"Diga com quem anda... &nbsp</p>
+    
+        <input placeholder="Complete aqui" id='inputTexto4' required>
+        <button onclick="clicou('inputTexto4', 'p4'); validate4(); this.disabled = true;">Enviar</button> 
+        
+        <p id='p5'>"Mais vale um pássaro na mão... &nbsp</p>
+    
+        <input placeholder="Complete aqui" id='inputTexto5' required>
+        <button onclick="clicou('inputTexto5', 'p5'); validate5(); this.disabled = true;">Enviar</button>
+
+        <p id='p6'>"De grão em grão... &nbsp</p>
+    
+        <input placeholder="Complete aqui" id='inputTexto6' required>
+        <button onclick="clicou('inputTexto6', 'p6'); validate6(); this.disabled = true;">Enviar</button>
+
+        <p id='p7'>"Deus ajuda a... &nbsp</p>
+    
+        <input placeholder="Complete aqui" id='inputTexto7' required>
+        <button onclick="clicou('inputTexto7', 'p7'); validate7(); this.disabled = true;">Enviar</button>
+
+        <p id='p8'>"Águas passadas... &nbsp</p>
+    
+        <input placeholder="Complete aqui" id='inputTexto8' required>
+        <button onclick="clicou('inputTexto8', 'p8'); validate8(); this.disabled = true;">Enviar</button>
+
+        <p id='p9'>"A pressa é a... &nbsp</p>
+    
+        <input placeholder="Complete aqui" id='inputTexto9' required>
+        <button onclick="clicou('inputTexto9', 'p9'); validate9(); this.disabled = true;">Enviar</button>
+
+        <p id='p10'>"A corda sempre arrebenta... &nbsp</p>
+    
+        <input placeholder="Complete aqui" id='inputTexto10' required>
+        <button onclick="clicou('inputTexto10', 'p10'); validate10(); this.disabled = true;">Enviar</button>
+        <br>
+        <button onclick="terminou();" type="submit" form="totalForm" id="totalButton" value="Submit">Enviar tudo</button>
+        
+        </div>
+
+        <div class="resultados hide">
+            <h3 class="res-quiz">
+                Você acertou: &nbsp;
+            </h3>
+        </div>
+
+
+        <script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
