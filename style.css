@@ -28,10 +28,6 @@ body {
     padding-bottom: 1rem;
 }
 
-.quiz {
-    position: relative;
-}
-
 .quiz button {
     margin: 0 0 2rem;
     padding: 0.5rem 1.5rem;
@@ -65,17 +61,39 @@ body {
 }
 
 .hide {
+    display: none;
     opacity: 0;
     visibility: hidden;
 }
 
-.resultados {
-    position: absolute;
-    top: 50;
-    left: 50;
-    transform: translate(-50%, -50%);
+.quiz.hide {
+    font-size: 0rem;
+    padding: 0;
+    margin: 0;
+    height: 0;
+    width: 0;
+}
+
+
+.resultados.show {
+    height: 100vh;
+    text-align: center;
+    display: block;
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+    
+    
+    overflow: hidden
+}
+
+.res-quiz {
+    text-align: center;
+    padding-top: 20rem;
     
 }
+
+
 
 @media (min-width: 750px) {
     body {
@@ -99,4 +117,7 @@ body {
     .quiz button {
     padding: 0.7rem 3rem;
     }
+
+    
 }
+

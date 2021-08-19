@@ -54,7 +54,7 @@ validate4 = () => {
     let acrescimo = document.getElementById('inputTexto4').value.toLowerCase().replace('é', 'e').replace('.', '').replace(/\"/g, "")
     console.log(acrescimo)
     
-    if (acrescimo === 'que lhe direi quem es' || acrescimo==='e te direi quem es' || acrescimo==='e eu lhe direi quem es' || acrescimo==='e eu te direi quem es' || acrescimo==='que direi quem es' || acrescimo==='e direi quem es') {
+    if (acrescimo === 'que lhe direi quem es' || acrescimo==='e te direi quem es' || acrescimo==='e eu lhe direi quem es' || acrescimo==='e eu te direi quem es' || acrescimo==='que direi quem es' || acrescimo==='e direi quem es' || acrescimo==='e lhe direi quem es') {
         totalScore += 10
     }
     console.log(acrescimo)
@@ -120,7 +120,7 @@ validate10 = () => {
     let acrescimo = document.getElementById('inputTexto10').value.toLowerCase().replace('.', '').replace(/\"/g, "")
     console.log(acrescimo)
     
-    if (acrescimo === 'do lado mais fraco') {
+    if (acrescimo === 'do lado mais fraco' || 'no lado mais fraco') {
         totalScore += 10
         returnScore(totalScore)
     }
